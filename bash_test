@@ -1,4 +1,0 @@
-#!/bin/sh
-for i in `seq 10`
-  touch $i
-done
