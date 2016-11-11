@@ -1,1 +1,4 @@
 1.求某个范围下的所有奇数 偶数 或某个范围经过运算后的奇数 偶数  squared.py
+2.python的tab补全功能,将脚本放到/usr/lib/python.2.x.x/site-packages/
+
+tab_completion.py
