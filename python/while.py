@@ -2,6 +2,6 @@
 
 count = 0
 
-while True:
-	print 'count #%d',count
+while count < 100:
+	print 'count #',count
 	count +=1
