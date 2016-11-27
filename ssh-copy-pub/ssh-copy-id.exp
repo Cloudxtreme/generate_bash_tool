@@ -1,0 +1,18 @@
+#!/usr/bin/expect
+
+
+set file [index $argv 0]
+set host [index $argv 1]
+set password "password"
+
+
+spawn ssh-copy-id -i $file "-p 9830 zuoshou@$host"
+expect {
+
+
+	"*password"{"$password\r"}
+
+}
+
+expect eof
+
