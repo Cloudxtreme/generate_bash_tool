@@ -1,0 +1,14 @@
+set file [lindex $argv 0]
+set host [lindex $argv 1]
+set dir [lindex $argv 2]
+
+
+set password "jia_2014"
+spawn scp -P9830 $file zuoshou@$host:$dir
+expect {
+
+	"*password" {send "$password\r"}
+
+}
+expect eof
+
